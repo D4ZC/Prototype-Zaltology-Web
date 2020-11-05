@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('main');
+})->name('main'); 
 
 Auth::routes();
 
@@ -26,16 +26,23 @@ Route::get('/items/edit/{id}', 'ItemController@editView')->name('items.edit_view
 Route::post('/items/{id}', 'ItemController@edit')->name('items.edit');
 Route::delete('/items/{id}', 'ItemController@destroy')->name('items.destroy');
 
-
-
+//Inicio
+Route::get('/home', function(){
+    return view('home');
+});
+Route::get('/items', function(){
+    return view('items/index');
+});
 
     //CRUD articulos
 
-    // Listado articulos
-/* Route::get('/articulos', function(){
+ /*    // Listado articulos
+Route::get('/articulos', function(){
     return view('articulos/articulosIndex');
 });
-    
+
+
+
     // Formulario Nuevo articulo
 Route::get('/articulos/create', function(){   
 return view('articulos/articuloForm');
