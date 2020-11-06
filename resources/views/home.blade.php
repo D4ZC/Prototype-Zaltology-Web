@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,9 +16,13 @@
                     @endif
 
                     {{ __('Bienvenido al sistema!') }}
+                    
+                    <h1 style="margin: 10%">Market-Crypto</h1>
+                    <a href="/item">Ir a Items</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection
