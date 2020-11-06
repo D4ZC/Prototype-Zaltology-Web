@@ -93,7 +93,7 @@ class ItemController extends Controller
         Item::where('id', $item->id)
             ->update($request->except('_method', '_token'));
 
-        return redirect()->route('item.show', [$item]);
+        return redirect()->route('item.index', [$item]);
     }
 
     /**
