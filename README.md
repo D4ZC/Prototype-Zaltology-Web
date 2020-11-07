@@ -10,8 +10,7 @@
 ## About Laravel
 
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/dKPptd5/Captura-de-Pantalla-2020-11-06-a-la-s-20-40-27.png
-" width="400"></a></p>
+<p align="center"><a href="https://zaltology.com" target="_blank"><img src="https://i.ibb.co/dKPptd5/Captura-de-Pantalla-2020-11-06-a-la-s-20-40-27.png" width="400"></a></p>
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
