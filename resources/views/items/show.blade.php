@@ -11,7 +11,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Market-Crypto</title>
+    <title>Zaltology</title>
 </head>
 <body>
     <a href="{{ route('item.index') }}">Articulos</a>

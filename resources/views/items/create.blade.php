@@ -10,7 +10,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Market-Crypto</title>
+    <title>Zaltology/title>
 </head>
 <body>
     <h1>Crear Articulo</h1>

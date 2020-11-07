@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>
-        Articulos de Crypto Mercado
+        Articulos de Zaltology
     </h1>
       @csrf
       <div id="fullscreen_bg" class="fullscreen_bg"/>

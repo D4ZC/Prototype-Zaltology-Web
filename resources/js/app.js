@@ -13,3 +13,7 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+
+$('#myCarousel').carousel({
+    interval: 3000,
+ })

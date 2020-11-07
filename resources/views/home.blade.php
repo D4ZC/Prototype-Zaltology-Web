@@ -17,7 +17,7 @@
 
                     {{ __('Bienvenido al sistema!') }}
                     
-                    <h1 style="margin: 10%">Market-Crypto</h1>
+                    <h1 style="margin: 10%">Zaltology</h1>
                     <a href="/item">Ir a Items</a>
                 </div>
             </div>
