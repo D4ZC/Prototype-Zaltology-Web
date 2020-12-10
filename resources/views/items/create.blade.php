@@ -10,7 +10,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Zaltology/title>
+    <title>Zaltology</title>
 </head>
 <body>
     <h1>Crear Articulo</h1>
@@ -33,9 +33,6 @@
     @endif
         @csrf
 
-
-
-
 {{-- 
         <label for="nameItm">Nombre del Item:</label>
         <input type="text" name="nameItem" value="{{ old('nameItem') ?? $item->category ?? '' }}">
@@ -50,7 +47,9 @@
         <textarea name="description">{{ old('description') ?? $description->description ?? '' }}</textarea>
         <br>
 
-        <button type="submit">Aceptar</button> --}}
+        <button type="submit">Aceptar</button> 
+        
+--}}
 
         <div id="fullscreen_bg" class="fullscreen_bg"/>
         <form class="form-signin">

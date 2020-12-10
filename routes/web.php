@@ -31,6 +31,14 @@ Route::get('/items/create', function(){
 
 Route::resource('item', ItemController::class);
 
+
+Route::get('/usuarios', function (){
+
+return view('usuarios');
+
+});
+
+
     //CRUD articulos
 
  /*    // Listado articulos

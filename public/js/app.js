@@ -65802,6 +65802,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
+$('#myCarousel').carousel({
+  interval: 3000
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -65907,8 +65911,8 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/dazc/Sites/laravelPrueba/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/dazc/Sites/laravelPrueba/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/dazc/Sites/Zaltology/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/dazc/Sites/Zaltology/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

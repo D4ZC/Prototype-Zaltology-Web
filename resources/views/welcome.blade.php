@@ -69,45 +69,8 @@
 	</div>
 </nav>
 
-{{-- <div class="login-page">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-8 m-auto col-sm-8 col-12">
-				<div class="log-box">
-					<div class="row">
-						<div class="col-xl-5 col-sm-5 col-12 pad-right-0">
-							<div class="logo-back">
-							</div>
-						</div>
-						<div class="col-xl-7 col-sm-7 col-12 pad-left-0">
-							<div class="log-content">
-								<h1>LOGIN </h1>
-								<div class="log-body">
-								<div class="form-group myr-top">
-								<label>Email:</label>
-									<input type="text" class="form-control custom" placeholder="Correo">
-								</div>
-								<div class="form-group myr-top">
-								<label>Password:</label>
-									<input type="passowrd" class="form-control custom" placeholder="Contraseña">
-								</div>
-								<div class="log-btn text-center">
-									<a href="#" class="btn btn-theme1">Entrar</a>
-								</div>
-								<div class="log-bottom-cotent">
-								<p>Crea una cuenta<a href="signup.html">   Registrarse aquí</a></p>
-								<a href="forgotpassword.html" class="pull-right">Olvidé mi contraseña</a>
-								</p>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> --}}
+
+
 
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
@@ -125,37 +88,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="mask flex-center">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-7 col-12 order-md-1 order-2">
-                <h4>Present your <br>
-                  awesome product</h4>
-                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
-                  necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                <a href="#">Cotizar reparación</a> </div>
-              <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/duWgXRs.png" class="mx-auto" alt="slide"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="mask flex-center">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-7 col-12 order-md-1 order-2">
-                <h4>Present your <br>
-                  awesome product</h4>
-                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
-                  necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                <a href="#">Cotizar Reparación</a> </div>
-              <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/DGkR4OQ.png" class="mx-auto" alt="slide"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
   <!--slide end--> 
 
@@ -166,7 +99,7 @@
 			<div class="col-xl-3 col-sm-6 col-12">
 				<div class="footer-section">
 					<h6>Compañia</h6>
-					<p>ZALTOLOGY es un pequeño taller formado por un estudiante de ingenieria y su hermano entusiasmados por la tecnologia
+					<p>ZALTOLOGY es un pequeño taller formado por entusiastas de la tecnologia
                         y los teléfonos celulares.
                     </p>
 				</div>
