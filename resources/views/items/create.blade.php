@@ -13,7 +13,7 @@
     <title>Zaltology</title>
 </head>
 <body>
-    <h1>Crear Articulo</h1>
+    <h1 class="text-center">Crear Articulo</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -88,6 +88,8 @@
                        <button  class="btn btn-sm btn-primary btn-block" type="submit">Aceptar</button>
                        <a href="{{ route('item.index') }}" class="btn btn-sm btn-primary btn-block" >
                            Cancelar</a> </form>
+                        <a href="/home" class="btn btn-sm btn-primary btn-block" >
+                           Regresar a Inicio</a> </form>   
                    </div>
                </div>
            </div>

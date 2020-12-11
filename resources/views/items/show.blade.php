@@ -13,88 +13,111 @@
     <meta charset="UTF-8">
     <title>Zaltology</title>
 </head>
-<body>
-    <a href="{{ route('item.index') }}">Articulos</a>
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    <body>
+            {{-- <a href="{{ route('item.index') }}">Articulos</a> --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
-    @if(isset($item))
-        <form action="{{ route('item.update', [$item]) }}" method="POST">
-        @method('patch')
-    @else
-       <form action="{{ route('item.store') }}" method="POST">
-    @endif
-        @csrf
+            @if(isset($item))
+                <form action="{{ route('item.update', [$item]) }}" method="POST">
+                @method('patch')
+            @else
+            <form action="{{ route('item.store') }}" method="POST">
+            @endif
+                @csrf
 
-    {{-- <form action="{{ route('item.destroy', [$item]) }}" method="POST">
-        @method('DELETE')
-        @csrf
-        <button type="submit">Eliminar</button>
-    </form> --}}
+            {{-- <form action="{{ route('item.destroy', [$item]) }}" method="POST">
+                @method('DELETE')
+                @csrf
+                <button type="submit">Eliminar</button>
+            </form> --}}
+            
+        <!------ Contenedor articulo a modificar ---------->  
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="panel panel-default">
+                            <table class="table table-striped table-condensed">
+                                <thead>
+                                    <tbody>
 
-    <hr>
-    <h1>ID Item # {{ $item->id }}</h1>
-    <ul>
-        <li>Nombre del Articulo: {{ $item->nameItem }}</li>
-        <li>Categoria: {{ $item->category }}</li>
-        <li>Descripcion: {{ $item->description }}</li>
-    </ul>
+
+                                        <h2 class="text-center">Item a Modificar</h2>
+                                        <tr>
+                                            <th scope="col">ID Articulo: {{ $item->id}}</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Nombre del Articulo: {{ $item->nameItem }}</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Categoria: {{ $item->category }}</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Descripcion: {{ $item->description }}</th>
+                                        </tr>
 
 
-    <div id="fullscreen_bg" class="fullscreen_bg"/>
-    <form class="form-signin">
-   <div class="container">
-       <div class="row">
-           <div class="col-md-4 col-md-offset-4">
-               <div class="panel panel-default">
-                   <div class="panel-body">
-                       <h3 class="text-center">Agregar nuevo item</h3>
+                                    </tbody>   
+                                </thead>   
+                            </table>
+                        </div>   
+                    </div>        
+                </div>    
+            </div>
+        <!------ Contenedor articulo a modificar ---------->   
 
-                       <form class="form form-signup" role="form">
+        <!------ Contenedor Editar Item ----------> 
+        <div id="fullscreen_bg" class="fullscreen_bg"/>
+            <form class="form-signin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                        <h2 class="text-center">Editar item</h2>
 
-                        <div class="form-group">
-                            <div class="input-group">
-                               <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
-                               </span>
-                               <input type="text" name="nameItem" class="form-control" placeholder="Nombre del Item" value="{{ old('nameItem') ?? $item->item ?? '' }}" />
-                           </div>
-                       </div>
-                       
-                       <div class="form-group">
-                           <div class="input-group">
-                               <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
-                               <input  type="Text" name="category" class="form-control" placeholder="Categoria" {{ old('category') ?? $category->category ?? '' }} />
-                           </div>
-                       </div>
+                                            <form class="form form-signup" role="form">
 
-                       <div class="form-group">
-                           <div class="input-group">
-                               <span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span></span>
-                               <input   type="Text" name="description" class="form-control" placeholder="Descripcion" {{ old('description') ?? $description->description ?? '' }} />
-                           </div>
-                   
-                       
-                   </div>
-                   <button action="{{ route('item.update', [$item]) }}" method="POST" class="btn btn-sm btn-primary btn-block" type="submit">Actualizar</button>
+                                            <div class="form-group">
 
-                   <a href="{{ route('item.index') }}" class="btn btn-sm btn-primary btn-block" >
-                       Cancelar</a> </form>
-               </div>
-           </div>
-       </div>
-   </div>
-   </form>
-   
-   
-   </div>  
-</body>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+                                                    </span>
+                                                <input type="text" name="nameItem" class="form-control" placeholder="Nombre del Item" value="{{ old('nameItem') ?? $item->item ?? '' }}" />
+                                                </div>
+                                            </div>
+                                
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+                                                <input  type="Text" name="category" class="form-control" placeholder="Categoria" {{ old('category') ?? $category->category ?? '' }} />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span></span>
+                                                <input   type="Text" name="description" class="form-control" placeholder="Descripcion" {{ old('description') ?? $description->description ?? '' }} />
+                                                </div>
+                                            </div>
+                                                <button action="{{ route('item.update', [$item]) }}" method="POST" class="btn btn-sm btn-primary btn-block" type="submit">Actualizar</button>
+
+                                                <a href="{{ route('item.index') }}" class="btn btn-sm btn-primary btn-block" >
+                                                    Cancelar</a> </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>  
+    </body>
 </html>
 
 

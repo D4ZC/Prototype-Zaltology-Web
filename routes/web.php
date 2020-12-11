@@ -10,13 +10,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-/* Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/items', 'ItemController@index');
 Route::post('/items', 'ItemController@store')->name('items.store');
 Route::get('/items/edit/{id}', 'ItemController@editView')->name('items.edit_view');
 Route::post('/items/{id}', 'ItemController@edit')->name('items.edit');
 Route::delete('/items/{id}', 'ItemController@destroy')->name('items.destroy');
- */
+ 
 //Inicio
 Route::get('/home', function(){
     return view('home');
@@ -37,6 +37,7 @@ Route::get('/usuarios', function (){
 return view('usuarios');
 
 });
+
 
 
     //CRUD articulos

@@ -16,10 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Articulos</title>
 </head>
+
 <body>
-    <h1>
-        Articulos de Zaltology
-    </h1>
+    <h1 class="text-center"> Articulos de Zaltology</h1>
       @csrf
       <div id="fullscreen_bg" class="fullscreen_bg"/>
              <form class="form-signin">
@@ -30,8 +29,7 @@
                     <div class="panel panel-primary">
                     <h3 class="text-center"> Inventario</h3>
                     <div class="panel-body">    
-            
-                <table class="table table-striped table-condensed">
+                    <table class="table table-striped table-condensed">
                                 <thead>
                                 <tr>
                                     <th scope="col">#id</th>
@@ -74,14 +72,14 @@
                                         @endforeach
                                     </ul>
                                 </div>
-                            @endif
+                                @endif
 
-                            @if(isset($item))
-                                <form action="{{ route('item.update', [$item]) }}" method="POST">
-                                @method('patch')
-                            @else
-                                <form action="{{ route('item.store') }}" method="POST">
-                            @endif
+                                @if(isset($item))
+                                    <form action="{{ route('item.update', [$item]) }}" method="POST">
+                                    @method('patch')
+                                @else
+                                    <form action="{{ route('item.store') }}" method="POST">
+                                @endif
 
 
                             </tbody>
@@ -93,8 +91,12 @@
         </form>                            
     </table>
             <a href="{{ route('item.create') }}" class="btn btn-sm btn-primary btn-block" role="button">Agregar nuevo item</a>
-            
+            <a href="/home" class="btn btn-sm btn-primary btn-block" role="button">Regresar a Inicio</a>
+
+            <a href="item/create">Boton de Prueba</a>
+           
 </form>
+
 </body>
 </html>
 
