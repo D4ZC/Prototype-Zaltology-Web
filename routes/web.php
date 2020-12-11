@@ -63,6 +63,29 @@ Route::get('/items/edit', function (){
 
 });
 
+//Ruta para las imagenes de los telefonos
+
+Route::resource('photos', PhotoController::class);
+
+//Acciones para las Fotos
+Route::resources([
+    'photos' => PhotoController::class,
+    'posts' => PostController::class,
+]);
+
+Route::resource('photos', PhotoController::class)->only([
+    'index', 'show'
+]);
+
+Route::resource('photos', PhotoController::class)->except([
+    'create', 'store', 'update', 'destroy'
+]);
+
+
+
+
+
+
 
 
     //CRUD articulos
