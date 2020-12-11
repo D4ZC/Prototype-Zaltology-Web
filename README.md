@@ -1,7 +1,8 @@
 
-## Vista Previa
+## ZALTOLOGY
 <p align="center"><a href="https://zaltology.com" target="_blank"><img src="https://i.ibb.co/G3r5Yff/Captura-de-Pantalla-2020-12-11-a-la-s-4-47-07.png" width="800"></a></p>
 
+## Vista Previa
 <p align="center"><a href="https://zaltology.com" target="_blank"><img src="https://i.ibb.co/MNp2zFw/Captura-de-Pantalla-2020-12-11-a-la-s-4-48-09.png" width="800"></a></p>
 
 ## Acerca de ZALTOLOGY
