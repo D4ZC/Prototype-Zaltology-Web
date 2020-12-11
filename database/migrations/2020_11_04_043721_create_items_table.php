@@ -23,6 +23,11 @@ class CreateItemsTable extends Migration
             $table->timestamps(); // Anota la fecha del registro y otro donde actualiza la fecha del registro
             //Llave foranea que asigna cada producto a su usuario
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+       
+            //Llave foranea a la descripcion de cada articulo donde contiene la informacion detallada y una vista del dispositivo
+            /* $table->engine = 'InnoDB';
+            $table->integer('description_id')->unsigned();            
+            $table->foreign('description_id')->references('id')->on('descriptionItem'); */
         });
     }
 
