@@ -12,10 +12,13 @@
 <p> La finalidad de este proyecto es tener una administracion sobre un taller de reparaciones de dispositivos moviles </p>
 
 ## Desarrollador
-<h1> David Zepeda </h1>
+<h2> David Zepeda </h2>
 
 ## Utilidades
 <p> Se desarrollo con Laravel Valet </p> 
+<p> Instalación: </p> 
+<p> composer global require laravel/valet  </p>
+<p> valet install </p>
 
 ## License
 
