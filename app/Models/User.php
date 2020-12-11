@@ -47,4 +47,16 @@ class User extends Authenticatable
     public function items() {
         return $this->hasMany(Item::class);
     }
+
+    //Factories (15)
+
+    public function run()
+    {
+        User::factory()
+                ->times(50)
+                ->hasPosts(1)
+                ->create();
+    }
+
+
 }
