@@ -111,8 +111,8 @@
 
                                                 <a href="{{ route('item.index') }}" class="btn btn-sm btn-primary btn-block" >
                                                     Cancelar</a> </form>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </form>

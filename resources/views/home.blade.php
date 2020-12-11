@@ -59,7 +59,7 @@
     <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="logout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Activity Log</a>
@@ -76,7 +76,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Inventario</div>
+                            <div class="sb-sidenav-menu-heading">Taller</div>
                             <a class="nav-link" href="/item">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Almacén
@@ -90,7 +90,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="item/create">Nuevo Item</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Modificar Item</a>
+                                    <a class="nav-link" href="items/edit">Modificar Item</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -144,7 +144,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Inventario</h1>
+                        <h1 class="mt-4">Taller</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dispositivos</li>
                         </ol>
@@ -153,7 +153,7 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Por reparar</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver Dispositivos</a>
+                                        <a class="small text-white stretched-link" href="/item">Ver Dispositivos</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Pendiente de Entrega</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver Dispositivos</a>
+                                        <a class="small text-white stretched-link" href="/item">Ver Dispositivos</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body">Entregados</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver Dispositivos</a>
+                                        <a class="small text-white stretched-link" href="/item">Ver Dispositivos</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -180,12 +180,82 @@
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">Devolución / Garantía</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver Dispositivos</a>
+                                        <a class="small text-white stretched-link" href="/item">Ver Dispositivos</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>
+                                Pendientes de la semana
+                            </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Dispositivo / Modelo</th>
+                                            <th>Descripción</th>
+                                            <th>Contacto</th>
+                                            <th>Fecha de Recibido</th>
+                                            <th>Precio Final</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Dispositivo / Modelo</th>
+                                            <th>Descripción</th>
+                                            <th>Contacto</th>
+                                            <th>Fecha de Recibido</th>
+                                            <th>Precio Final</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Daniel Michel</td>
+                                            <td>Samsung J7 Pro</td>
+                                            <td>Pantalla Rota</td>
+                                            <td>3316974462</td>
+                                            <td>13/10/2020</td>
+                                            <td>$950</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adriana Velazquez</td>
+                                            <td>Tablet Alcatel</td>
+                                            <td>Centro de Carga</td>
+                                            <td>3334631339</td>
+                                            <td>20/11/2020</td>
+                                            <td>$150</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ricardo Hernandez</td>
+                                            <td>Laptop Toshiba</td>
+                                            <td>Instalación Windows 10</td>
+                                            <td>3328437084</td>
+                                            <td>02/12/2020</td>
+                                            <td>$200</td>
+                                        </tr>
+                                  
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="card mb-4">
@@ -206,66 +276,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table mr-1"></i>
-                                Pendientes de la semana
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Dispositivo / Modelo</th>
-                                                <th>Descripción</th>
-                                                <th>Cantidad</th>
-                                                <th>Fecha de Recibido</th>
-                                                <th>Precio Final</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Dispositivo / Modelo</th>
-                                                <th>Descripción</th>
-                                                <th>Cantidad</th>
-                                                <th>Fecha de Recibido</th>
-                                                <th>Precio Final</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ashton Cox</td>
-                                                <td>Junior Technical Author</td>
-                                                <td>San Francisco</td>
-                                                <td>66</td>
-                                                <td>2009/01/12</td>
-                                                <td>$86,000</td>
-                                            </tr>
-                                      
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                            </div>
+                        
+                            
                         </div>
                     </div>
                 </main>

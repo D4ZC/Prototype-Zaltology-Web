@@ -10,12 +10,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+/* Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/items', 'ItemController@index');
 Route::post('/items', 'ItemController@store')->name('items.store');
 Route::get('/items/edit/{id}', 'ItemController@editView')->name('items.edit_view');
 Route::post('/items/{id}', 'ItemController@edit')->name('items.edit');
-Route::delete('/items/{id}', 'ItemController@destroy')->name('items.destroy');
+Route::delete('/items/{id}', 'ItemController@destroy')->name('items.destroy'); */
  
 //Inicio
 Route::get('/home', function(){
@@ -32,9 +32,34 @@ Route::get('/items/create', function(){
 Route::resource('item', ItemController::class);
 
 
-Route::get('/usuarios', function (){
+Route::get('/items/show', function (){
 
-return view('usuarios');
+    return view('items/show');
+
+});
+
+Route::get('/items/editar', function (){
+
+    return view('items/edit');
+
+});
+
+
+Route::get('/item/editar', function (){
+
+    return view('item/editar');
+
+});
+
+Route::get('/item/edit', function (){
+
+    return view('item/edit');
+
+});
+
+Route::get('/items/edit', function (){
+
+    return view('items/edit');
 
 });
 

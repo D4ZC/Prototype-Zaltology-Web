@@ -32,6 +32,15 @@ class ItemController extends Controller
         return view('items.create');
     }
 
+
+    /* Funcion para editar modificada */
+    public function editar()
+    {
+        return view('items.edit');
+    }
+    /* Funcion para editar modificada */
+
+
     /**
      * Store a newly created resource in storage.
      *
